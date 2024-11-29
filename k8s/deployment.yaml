@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spring-flux-demo
+  namespace: flux-system  # Add the namespace here, use 'flux-system' if deploying in that namespace
   labels:
     app: spring-flux-demo
 spec:
