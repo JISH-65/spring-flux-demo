@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-flux-demo
+  labels:
+    app: spring-flux-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-flux-demo
+  template:
+    metadata:
+      labels:
+        app: spring-flux-demo
+    spec:
+      containers:
+        - name: spring-flux-demo
+          image: jishanmulla977/spring-flux-demo:v1
+          ports:
+            - containerPort: 8080
