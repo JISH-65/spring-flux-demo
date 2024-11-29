@@ -15,6 +15,6 @@ public class SpringFluxDemoApplication {
 
     @GetMapping("/")
     public String home() {
-        return "TASK DONE!! Welcome to Hati Intl.";
+        return "Hello Fluxy";
     }
 }
